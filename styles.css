@@ -1,19 +1,21 @@
 :root {
+  /* Paleta EduRecorta: navy do wordmark "Edu", + cores do arco-íris de "Recorta" (coral, dourado, teal, magenta, roxo) */
   --cream: #fff6e8;
   --cream-2: #fdeed4;
-  --navy: #23264a;
+  --navy: #1f2a4a;
   --purple: #8b5fbf;
   --purple-dark: #6a4aa0;
-  --red: #f4574b;
-  --orange: #ffb020;
+  --red: #f2542d;
+  --orange: #f9a825;
   --yellow: #ffd23f;
   --teal: #2ec4b6;
   --green: #7bc47f;
   --blue: #4f9ddb;
-  --pink: #f48fb1;
+  --pink: #ec5b95;
+  --pink-dark: #c2477a;
   --border: 3px dashed rgba(139, 95, 191, 0.45);
   --radius: 28px;
-  --shadow: 0 10px 0 rgba(35, 38, 74, 0.06), 0 18px 30px rgba(35, 38, 74, 0.08);
+  --shadow: 0 10px 0 rgba(31, 42, 74, 0.06), 0 18px 30px rgba(31, 42, 74, 0.08);
 }
 
 * { box-sizing: border-box; }
@@ -71,9 +73,19 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   font-size: 1.25rem;
   color: var(--navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.brand span { color: var(--red); }
+.brand-confetti { flex-shrink: 0; }
+
+.brand span {
+  background: linear-gradient(90deg, var(--red), var(--orange), var(--teal), var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /* Buttons */
 .btn {
@@ -89,13 +101,13 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--red), #ff8a5c);
+  background: linear-gradient(135deg, var(--red), var(--orange));
   color: #fff;
-  box-shadow: 0 8px 0 #c23f36, 0 14px 24px rgba(196, 63, 54, 0.35);
+  box-shadow: 0 8px 0 #c2401f, 0 14px 24px rgba(194, 64, 31, 0.35);
 }
 
 .btn-primary:hover { transform: translateY(-2px); }
-.btn-primary:active { transform: translateY(2px); box-shadow: 0 4px 0 #c23f36; }
+.btn-primary:active { transform: translateY(2px); box-shadow: 0 4px 0 #c2401f; }
 
 .btn-small {
   padding: 10px 20px;
@@ -124,11 +136,11 @@ img { max-width: 100%; display: block; }
 
 .badge.center { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
 
-.badge-red { color: #c23f36; background: #ffe3df; }
+.badge-red { color: #c2401f; background: #ffe3d9; }
 .badge-teal { color: #16867b; background: #d9f6f2; }
 .badge-purple { color: var(--purple-dark); background: #ece3f8; }
-.badge-orange { color: #b06d00; background: #fff0d1; }
-.badge-pink { color: #c2477a; background: #fbe1ea; }
+.badge-orange { color: #a3690a; background: #fff0d1; }
+.badge-pink { color: var(--pink-dark); background: #fce4ee; }
 
 .pill-row {
   display: flex;
@@ -166,6 +178,8 @@ img { max-width: 100%; display: block; }
 .hero { padding: 60px 0 40px; text-align: center; }
 
 .hero-inner { display: flex; flex-direction: column; align-items: center; }
+
+.hero-confetti { margin-bottom: 6px; }
 
 .sticker-title {
   font-size: clamp(2.4rem, 6vw, 4.2rem);
