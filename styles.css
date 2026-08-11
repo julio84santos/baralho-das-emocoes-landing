@@ -198,39 +198,6 @@ img { max-width: 100%; display: block; }
 
 .hero-img { border-radius: 18px; width: 100%; }
 
-.mock-box {
-  width: 100%;
-  aspect-ratio: 16 / 8;
-  border-radius: 18px;
-  background: linear-gradient(135deg, var(--purple), var(--red) 55%, var(--orange));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-}
-
-.mock-box-title {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.6rem, 4vw, 2.6rem);
-  color: #fff;
-  text-align: center;
-  line-height: 1.1;
-  text-shadow: 0 4px 0 rgba(0,0,0,0.12);
-}
-
-.mock-box-sub {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  padding: 6px 16px;
-  border-radius: 999px;
-}
-
 .card-strip {
   margin-top: 28px;
   display: flex;
@@ -246,23 +213,8 @@ img { max-width: 100%; display: block; }
   background: #fff;
   border: 3px solid rgba(255,255,255,0.9);
   box-shadow: 0 8px 16px rgba(35, 38, 74, 0.18);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 14px;
-  text-align: center;
+  object-fit: cover;
 }
-
-.mc-emoji { font-size: 2rem; }
-.mc-text { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 0.8rem; color: #fff; }
-
-.mc-yellow { background: linear-gradient(160deg, #ffd23f, #f2b705); }
-.mc-red { background: linear-gradient(160deg, #ff8a5c, var(--red)); }
-.mc-blue { background: linear-gradient(160deg, #7fc8f0, var(--blue)); }
-.mc-green { background: linear-gradient(160deg, #a7dba9, var(--green)); }
-.mc-purple { background: linear-gradient(160deg, #b28fe0, var(--purple)); }
 
 .card-strip .mock-card:nth-child(1) { transform: rotate(-8deg); }
 .card-strip .mock-card:nth-child(2) { transform: rotate(-3deg); }
