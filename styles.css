@@ -320,13 +320,16 @@ img { max-width: 100%; display: block; }
   .grid-4 { grid-template-columns: 1fr; }
 }
 
-.feature-card, .bonus-card, .review-card, .price-card {
+.feature-card, .bonus-card, .review-card, .price-card, .usecase-card {
   background: #fff;
   border-radius: 22px;
   border: var(--border);
   padding: 26px 22px;
   box-shadow: var(--shadow);
 }
+
+.usecase-card h3 { font-size: 1.05rem; color: var(--purple-dark); }
+.usecase-card p { font-size: 0.94rem; color: #4a4d6e; font-style: italic; margin-bottom: 0; }
 
 .fc-icon { font-size: 2rem; margin-bottom: 10px; }
 
