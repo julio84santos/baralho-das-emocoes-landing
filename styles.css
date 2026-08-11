@@ -80,6 +80,10 @@ img { max-width: 100%; display: block; }
 
 .brand-confetti { flex-shrink: 0; }
 
+.brand-logo { height: 30px; width: auto; flex-shrink: 0; }
+
+.brand-divider { color: #d8cdb8; font-weight: 400; }
+
 .brand span {
   background: linear-gradient(90deg, var(--red), var(--orange), var(--teal), var(--pink), var(--purple));
   -webkit-background-clip: text;
