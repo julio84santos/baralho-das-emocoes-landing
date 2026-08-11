@@ -214,17 +214,29 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-verbs {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--purple-dark);
-  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
 }
 
-.hero-verbs span {
-  color: var(--orange);
-  margin: 0 4px;
+.verb-pill {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
 }
+
+.vp-red { background: var(--red); }
+.vp-orange { background: var(--orange); }
+.vp-teal { background: var(--teal); }
+.vp-pink { background: var(--pink); }
+.vp-purple { background: var(--purple); }
+.vp-yellow { background: #f2b705; }
 
 .hero-frame {
   margin-top: 34px;
