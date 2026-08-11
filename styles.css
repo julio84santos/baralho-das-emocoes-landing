@@ -332,9 +332,33 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
 }
 .plan-tag { color: #8a8dae; font-weight: 700; font-size: 0.9rem; }
+.plan-desc { text-align: left; font-size: 0.92rem; color: #5c5f80; margin-top: -6px; }
 .plan-list { list-style: none; padding: 0; margin: 18px 0; text-align: left; font-size: 0.92rem; color: #4a4d6e; }
-.plan-list li { padding: 6px 0; }
+.plan-list li { padding: 8px 0; border-bottom: 1px dashed #eee; line-height: 1.45; }
+.plan-list li:last-child { border-bottom: none; }
+.plan-list li strong { color: var(--navy); }
 .plan-sep { font-weight: 700; color: var(--navy); border-top: 2px dashed #ddd; margin-top: 8px; padding-top: 12px !important; }
+
+.plan-bonus-heading {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  color: var(--purple-dark);
+  text-align: left;
+  margin: 18px 0 6px;
+  padding-top: 12px;
+  border-top: 2px dashed #ddd;
+}
+.plan-bonus-list { list-style: none; padding: 0; margin: 0 0 18px; text-align: left; }
+.plan-bonus-list li { padding: 10px 0; border-bottom: 1px dashed #eee; }
+.plan-bonus-list li:last-child { border-bottom: none; }
+.plan-bonus-list li strong {
+  display: block;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 0.92rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.plan-bonus-list li span { display: block; font-size: 0.88rem; color: #5c5f80; line-height: 1.5; }
 .plan-price { font-family: 'Baloo 2', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--navy); margin: 8px 0 2px; }
 .plan-price span { display: block; font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 700; color: #8a8dae; }
 .plan-note { font-size: 0.82rem; color: #8a8dae; margin-bottom: 16px; }
