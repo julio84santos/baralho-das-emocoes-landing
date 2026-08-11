@@ -197,11 +197,33 @@ img { max-width: 100%; display: block; }
 .sticker-title .c3 { color: var(--purple); }
 .sticker-title .c4 { color: var(--teal); }
 
+.hero-lead {
+  max-width: 640px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-top: 10px;
+}
+
 .hero-sub {
   max-width: 640px;
   font-size: 1.05rem;
   color: #4a4d6e;
   margin-top: 10px;
+}
+
+.hero-verbs {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--purple-dark);
+  margin-top: 18px;
+}
+
+.hero-verbs span {
+  color: var(--orange);
+  margin: 0 4px;
 }
 
 .hero-frame {
